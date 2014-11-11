@@ -1,0 +1,26 @@
+<html>
+<head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/jquery.getTweets.js"></script>
+<script>
+	/* See JS plugin for more documentation on how to use the options*/
+	$('body').find('#feed').gettweets({
+		'widgetId': '388060813702864896', 		
+		'elementId':'feed',
+		'amount':10,
+		'imageSize':'large',
+		'labels':true,
+		'exactTime':false,
+		'links':false,
+		'avatars':false,
+		'ticker':true,
+		'order':['author','contents','tweet-actions','time'],
+		'vticker':false,
+		'tickerrain':true,			
+	});	
+</script>
+</head>
+<body>
+<div id="feed" class=""></div>
+</body>
+</html>
