@@ -10,7 +10,7 @@ basic initialisation:
 	
 	$('#feed').gettweets();
 	
-	there are more options avaiable to change what you see for instance
+there are more options avaiable to change what you see for instance
 	
 	$('#feed').gettweets({
 			'widgetId':'', /* 18 numeric value from the url */			
