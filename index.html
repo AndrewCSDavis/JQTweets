@@ -8,9 +8,28 @@
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/jquery.getTweets.js"></script>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <script>
+	/* See JS plugin for more documentation on how to use the options*/
+	$('body').find('#feed').gettweets({
+		'widgetId': '388060813702864896', 		
+		'elementId':'feed',
+		'amount':10,
+		'imageSize':'large',
+		'labels':true,
+		'exactTime':false,
+		'links':false,
+		'avatars':false,
+		'ticker':true,
+		'order':['author','contents','tweet-actions','time'],
+		'vticker':false,
+		'tickerrain':true,			
+	});	
+</script>
   </head>
   <body>
     <div class="wrapper">
@@ -28,6 +47,10 @@
         </ul>
       </header>
       <section>
+        
+
+<body>
+<div id="feed" class=""></div>
         <h3>
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
